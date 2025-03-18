@@ -13,7 +13,7 @@ Algoritmo heladeria_arcoiris
 	
 	des_h1=ph1-(ph1*0.2);
 	des_h2=ph2-(ph2*0.1);
-	aum_h3=aum_h3+(aum_h3*0.1);
+	aum_h3=ph3+(ph3*0.1);
 	t=0;
 	
 	escribir "Ingresar cantidad del Helado de ",h1;

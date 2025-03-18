@@ -1,31 +1,31 @@
-Algoritmo fruteria_ejer4
-	definir f1,f2,f3,f4,aum,des,t,v1,v2,v3,v4,tc como real;
+Algoritmo heladeria_arcoiris_v2
+	definir f1,f2,f3,aum,desf2,desf1,t,v1,v2,v3,tc como real;
 	definir cant como entero;
-	definir p1,p2,p3,p4 como caracter;
+	definir p1,p2,p3 como caracter;
 	
-	p1="Mango";
-	p2="Manzana";
-	p3="Pera";
-	p4="Piña";
+	p1="mora";
+	p2="fresa";
+	p3="melocoton";
 	
-	f1=200;
-	f2=350;
-	f3=1000;
-	f4=150;
+	f1=2000;
+	f2=4000;
+	f3=5000;
+
 	
-	aum=0.2;
-	des=0.1;
+	desf1=0.2;
+	desf2=0.1;
+	aum=0.1;
 	
 	t=0;
 	
-	v1= (f1*aum+f1);
-	v2= (f2*aum+f2);
+	v1= f1-(f1*desf1);
+	v2= f2-(f2*desf2);
 	v3= (f3*aum+f3);
-	v4= (f4*aum+f4);
+	
 	
 	escribir "Ingrese cantidad de ",p1;
 	leer cant;
-	tc=v1*cant-(v1*cant)*0.1;
+	tc=v1*cant;
 	escribir "Producto Cantidad  Precio  total";
 	escribir "--------------------------------";
 	escribir p1,"       ",cant,"       $",v1,"    $",tc;
@@ -33,27 +33,21 @@ Algoritmo fruteria_ejer4
 	
 	escribir "Ingrese cantidad de ",p2;
 	leer cant;
-	tc=v2*cant-(v2*cant)*0.1;
+	tc=v2*cant;
 	escribir "Producto Cantidad  Precio  total";
 	escribir "--------------------------------";
 	escribir p2,"       ",cant,"       $",v2,"    $",tc;
 	t=t+tc;
-
+	
 	escribir "Ingrese cantidad de ",p3;
 	leer cant;
-	tc=v3*cant-(v3*cant)*0.1;
+	tc=v3*cant;
 	escribir "Producto Cantidad  Precio  total";
 	escribir "--------------------------------";
 	escribir p3,"       ",cant,"       $",v3,"    $",tc;
 	t=t+tc;
 	
-	escribir "Ingrese cantidad de ",p4;
-	leer cant;
-	tc=v4*cant-(v4*cant)*0.1;
-	escribir "Producto Cantidad  Precio  total";
-	escribir "--------------------------------";
-	escribir p4,"       ",cant,"       $",v4,"    $",tc;
-	t=t+tc;
+
 	escribir "El total es de: $", t;
 	
 FinAlgoritmo
